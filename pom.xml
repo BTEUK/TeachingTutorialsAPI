@@ -14,7 +14,9 @@
         <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <maven.compiler.version>3.13.0</maven.compiler.version>
+        <maven.compiler.version>3.8.1</maven.compiler.version>
+
+        <bukkitVersion>1.18.2-R0.1-SNAPSHOT</bukkitVersion>
     </properties>
 
     <build>
@@ -33,15 +35,15 @@
 
     <repositories>
         <repository>
-            <id>papermc</id>
-            <url>https://repo.papermc.io/repository/maven-public/</url>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
     </repositories>
 
     <dependencies>
         <dependency>
-            <groupId>io.papermc.paper</groupId>
-            <artifactId>paper-api</artifactId>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
             <version>1.18.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
