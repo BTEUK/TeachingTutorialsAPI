@@ -1,6 +1,6 @@
 package net.bteuk.teachingtutorials.services;
 
-import org.bukkit.entity.Player;
+import java.util.UUID;
 
 /**
  * Handles promotion of a player after completion of the compulsory tutorial
@@ -9,9 +9,10 @@ public interface PromotionService {
 
     /**
      * Calls the promotion logic for the promotion of the given player upon completion of the compulsory tutorial
-     * @param player The Bukkit Player object of the player to promote
+     * @param playerUuid uuid of the player to promote
+     * @param playerName name of the player to promote
      */
-    void promote(Player player);
+    void promote(UUID playerUuid, String playerName);
 
     /**
      *
